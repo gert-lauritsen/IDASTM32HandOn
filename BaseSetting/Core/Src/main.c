@@ -110,8 +110,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	//HAL_GPIO_TogglePin(GPIOx, GPIO_Pin)
+	HAL_Delay(1000);
     /* USER CODE END WHILE */
-
+//test
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

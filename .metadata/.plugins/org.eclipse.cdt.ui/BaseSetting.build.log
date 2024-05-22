@@ -1,0 +1,10 @@
+20:14:04 **** Incremental Build of configuration Debug for project BaseSetting ****
+make -j16 all 
+arm-none-eabi-size  BaseSetting.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16032	     20	   1964	  18016	   4660	BaseSetting.elf
+Finished building: default.size.stdout
+ 
+
+20:14:05 Build Finished. 0 errors, 0 warnings. (took 195ms)
+
