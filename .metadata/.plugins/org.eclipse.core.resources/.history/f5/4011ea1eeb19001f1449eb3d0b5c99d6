@@ -1,0 +1,18 @@
+/*
+ * TMP102.c
+ *
+ *  Created on: May 24, 2024
+ *      Author: gert
+ */
+#include "TMP102.h"
+
+
+I2C_HandleTypeDef *defaultHandle;
+uint8_t DefaultBaseAdress;
+
+bool InitTmp102(I2C_HandleTypeDef *Handle, uint8_t BaseAdress) {
+	DefaultBaseAdress=	BaseAdress;
+	defaultHandle=Handle;
+}
+
+float ReadTemperature();

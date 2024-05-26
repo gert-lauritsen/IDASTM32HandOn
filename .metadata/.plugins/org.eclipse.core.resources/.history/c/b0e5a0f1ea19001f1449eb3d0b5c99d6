@@ -1,0 +1,18 @@
+/*
+ * TMP102.h
+ *
+ *  Created on: May 24, 2024
+ *      Author: gert
+ */
+
+#ifndef SRC_TMP102_H_
+#define SRC_TMP102_H_
+#include "stdint.h"
+#include "stdbool.h"
+
+bool InitTmp102(I2C_HandleTypeDef &Handle, uint8_t BaseAdress);
+
+float ReadTemperature();
+
+
+#endif /* SRC_TMP102_H_ */

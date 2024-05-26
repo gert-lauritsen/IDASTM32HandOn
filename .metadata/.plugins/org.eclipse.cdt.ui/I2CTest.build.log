@@ -1,0 +1,17 @@
+11:22:17 **** Incremental Build of configuration Debug for project I2CTest ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/TMP102.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/TMP102.d" -MT"Core/Src/TMP102.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/TMP102.o"
+arm-none-eabi-gcc -o "I2CTest.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\WorkSpace\IDA\Intro_til_STM32_barebone\I2CTest\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2CTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2CTest.elf
+ 
+arm-none-eabi-size  I2CTest.elf 
+arm-none-eabi-objdump -h -S I2CTest.elf  > "I2CTest.list"
+   text	   data	    bss	    dec	    hex	filename
+  21416	     12	   1988	  23416	   5b78	I2CTest.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2CTest.list
+ 
+
+11:22:18 Build Finished. 0 errors, 0 warnings. (took 651ms)
+
