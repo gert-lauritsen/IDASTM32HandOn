@@ -123,7 +123,7 @@ int main(void)
   }
   HAL_UART_Transmit(&huart1, EndMSG, sizeof(EndMSG), 10000);
   /*--[ Scanning Done ]--*/
-
+  //HAL_UART_Receive_IT(&huart1, pData, Size)
   /* USER CODE END 2 */
 
   /* Infinite loop */
