@@ -1,0 +1,29 @@
+/*
+ * SK6812.h
+ *
+ *  Created on: May 26, 2024
+ *      Author: gert
+ */
+
+#ifndef SRC_SK6812_H_
+#define SRC_SK6812_H_
+
+typedef union
+{
+  struct
+  {
+    uint8_t w;
+    uint8_t b;
+    uint8_t r;
+    uint8_t g;
+  } color;
+  uint32_t data;
+} PixelRGBW_t;
+
+#define SK6812_NUM_PIXELS 40
+
+PixelRGBW_t pixel[SK6812_NUM_PIXELS] = {0};
+
+void SK6812_UpdatePixel();
+
+#endif /* SRC_SK6812_H_ */

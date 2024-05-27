@@ -1,0 +1,13 @@
+/*
+ * WS2812.h
+ *
+ *  Created on: May 26, 2024
+ *      Author: gert
+ */
+
+#ifndef SRC_WS2812_H_
+#define SRC_WS2812_H_
+
+
+
+#endif /* SRC_WS2812_H_ */
