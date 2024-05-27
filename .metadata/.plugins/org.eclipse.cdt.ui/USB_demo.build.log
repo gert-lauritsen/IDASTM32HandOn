@@ -1,0 +1,16 @@
+12:05:10 **** Incremental Build of configuration Debug for project USB_demo ****
+make -j16 all 
+arm-none-eabi-gcc -o "USB_demo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\WorkSpace\IDA\Intro_til_STM32_barebone\USB_demo\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_demo.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USB_demo.elf
+ 
+arm-none-eabi-size  USB_demo.elf 
+arm-none-eabi-objdump -h -S USB_demo.elf  > "USB_demo.list"
+   text	   data	    bss	    dec	    hex	filename
+  55196	    724	   9660	  65580	  1002c	USB_demo.elf
+Finished building: default.size.stdout
+ 
+Finished building: USB_demo.list
+ 
+
+12:05:10 Build Finished. 0 errors, 0 warnings. (took 557ms)
+
