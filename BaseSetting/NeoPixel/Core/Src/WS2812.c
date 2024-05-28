@@ -23,7 +23,7 @@ extern TIM_HandleTypeDef htim2;
 
 
   void WS2812_UpdatePixel() {
-	  k = 0;
+//	  k = 0;
 	  stepSize = 4;
 	  for (i = (WS2812_NUM_PIXELS - 1); i > 0; i--)
 	      {

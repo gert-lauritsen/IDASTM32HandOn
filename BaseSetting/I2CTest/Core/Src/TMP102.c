@@ -20,7 +20,6 @@ bool InitTmp102(I2C_HandleTypeDef *Handle, uint8_t BaseAdress) {
 	defaultHandle     = Handle;
     buf[0] = REG_TEMP;
     ret = HAL_I2C_Master_Transmit(defaultHandle, DefaultBaseAdress, buf, 1, HAL_MAX_DELAY);
-   // ret = HAL_I2C_Master_Transmit(&hi2c1, TMP102_ADDR, buf, 1, HAL_MAX_DELAY);
 	return (ret = HAL_OK);
 }
 
@@ -30,7 +29,6 @@ bool ReadTemperature(float *temp_c) {
 	// Tell TMP102 that we want to read from the temperature register
     buf[0] = REG_TEMP;
     ret = HAL_I2C_Master_Transmit(defaultHandle, DefaultBaseAdress, buf, 1, HAL_MAX_DELAY);
-    //ret = HAL_I2C_Master_Transmit(&hi2c1, TMP102_ADDR, buf, 1, HAL_MAX_DELAY);
     if ( ret == HAL_OK) {
     	ret = HAL_I2C_Master_Receive(defaultHandle, DefaultBaseAdress, buf, 2, HAL_MAX_DELAY);
         if ( ret == HAL_OK) {
