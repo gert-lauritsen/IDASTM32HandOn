@@ -60,8 +60,8 @@ all: main-build
 main-build: NeoPixel.elf secondary-outputs
 
 # Tool invocations
-NeoPixel.elf NeoPixel.map: $(OBJS) $(USER_OBJS) C:\WorkSpace\IDA\Intro_til_STM32_barebone\NeoPixel\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "NeoPixel.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\WorkSpace\IDA\Intro_til_STM32_barebone\NeoPixel\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NeoPixel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+NeoPixel.elf NeoPixel.map: $(OBJS) $(USER_OBJS) C:\WorkSpace\IDA\Intro\ til\ STM32\ barebone\BaseSetting\NeoPixel\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "NeoPixel.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\WorkSpace\IDA\Intro til STM32 barebone\BaseSetting\NeoPixel\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NeoPixel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
