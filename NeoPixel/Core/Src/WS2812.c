@@ -7,10 +7,10 @@
 #include "WS2812.h"
 #include "stm32f4xx_hal.h"
 extern TIM_HandleTypeDef htim2;
-#define NEOPIXEL_ONE 62  //(ARR+1)(0,64)=(105*0,64)=67,2
-#define NEOPIXEL_ZERO 34 //(ARR+1)(0,32)=(105*0,32)=33,6
+#define NEOPIXEL_ZERO 34 //(ARR+1)(0,32)=(102*0,33)=33,6
+#define NEOPIXEL_ONE 67  //(ARR+1)(0,64)=(102*0,66)=67,2
 #define DMA_BUFF_SIZE (WS2812_NUM_PIXELS*24)+1
-
+  PixelRGB_t pixel[WS2812_NUM_PIXELS] = {0};
   uint32_t dmaBuffer[DMA_BUFF_SIZE] = {0};
   uint32_t *pBuff;
   int i, j, k;
@@ -23,7 +23,7 @@ extern TIM_HandleTypeDef htim2;
 
 
   void WS2812_UpdatePixel() {
-	  k = 0;
+//	  k = 0;
 	  stepSize = 4;
 	  for (i = (WS2812_NUM_PIXELS - 1); i > 0; i--)
 	      {

@@ -74,9 +74,6 @@ static int ADC1_index;
 ADC_ChannelConfTypeDef sConfig = {0};
 	ADC1_Raw[ADC1_index++] = HAL_ADC_GetValue(AdcHandle);
 	if (ADC1_index>=NAdcCh) {
-	//	VprCount=1.23/ADC1_Raw[2];
-		ADC1_Raw[0]-=50;
-		ADC1_Raw[1]-=62; //offset
 		RawToFloat();
 		ADC1_index=0; NewData=true;
 		HAL_ADC_Stop (&hadc);
