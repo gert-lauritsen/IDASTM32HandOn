@@ -109,7 +109,7 @@ int main(void)
   while (1)
   {
 	  WS2812_UpdatePixel();
-	  HAL_Delay(1000);
+	  HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

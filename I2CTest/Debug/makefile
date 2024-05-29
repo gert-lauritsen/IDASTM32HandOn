@@ -60,8 +60,8 @@ all: main-build
 main-build: I2CTest.elf secondary-outputs
 
 # Tool invocations
-I2CTest.elf I2CTest.map: $(OBJS) $(USER_OBJS) C:\WorkSpace\IDA\Intro_til_STM32_barebone\I2CTest\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "I2CTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\WorkSpace\IDA\Intro_til_STM32_barebone\I2CTest\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2CTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+I2CTest.elf I2CTest.map: $(OBJS) $(USER_OBJS) C:\WorkSpace\IDA\IDASTM32HandOn\I2CTest\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "I2CTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\WorkSpace\IDA\IDASTM32HandOn\I2CTest\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2CTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

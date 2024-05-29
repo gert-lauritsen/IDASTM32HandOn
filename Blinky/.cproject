@@ -164,14 +164,6 @@
 		<project id="Blinky.null.921400573" name="Blinky"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1485058028;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1485058028.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.763632807;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1690793545">
-			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1755803694;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1755803694.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1104360517;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.885111547">
-			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-	</storageModule>
 	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="scannerConfiguration"/>
 </cproject>

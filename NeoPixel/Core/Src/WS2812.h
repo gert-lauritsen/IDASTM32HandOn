@@ -22,7 +22,7 @@ typedef union
 #define WS2812_NUM_PIXELS 40
 
 
-PixelRGB_t pixel[WS2812_NUM_PIXELS] = {0};
+
 
 void WS2812_UpdatePixel();
 
