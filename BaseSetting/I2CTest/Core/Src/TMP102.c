@@ -43,8 +43,6 @@ bool ReadTemperature(float *temp_c) {
             // Convert to float temperature value (Celsius)
             *temp_c = val * 0.0625;
 
-            // Convert temperature to decimal format
-            *temp_c *= 100;
         }
 
     }
